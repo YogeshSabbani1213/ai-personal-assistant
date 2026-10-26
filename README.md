@@ -3,14 +3,13 @@
 
 A beginner-friendly AI personal assistant built with free, locally running AI tools.
 
-## Features
+## Current Features
 
-- Daily study planning and task management
-- Job application tracking
-- Interview preparation and revision
-- Follow-up reminders
-- Natural-language assistant requests
-- Persistent memory (planned)
+- Chat with a locally running Ollama model
+- Backend connectivity status
+- Conversation visible for the current page session
+
+Task management, reminders, and persistent memory are not implemented yet.
 
 ## Technology Stack
 
@@ -27,11 +26,13 @@ A beginner-friendly AI personal assistant built with free, locally running AI to
 
 ## Development Status
 
-Phase 1: Project setup and version control.
+Initial chat interface milestone.
 
 ## Running Locally
 
-Setup instructions will be added as the application is developed.
+Start the backend from `backend/` with `npm start`, then start the frontend from
+`frontend/` with `npm run dev`. The frontend uses a Vite development proxy to
+forward `/api` requests to `http://localhost:3000`.
 
 ## Cost
 
